@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+:root{
+    --color-1:cyan;
+    --color-2:cyan;
+    --color-3:rgb(245, 242, 241);
+    --color-4:cyan;
+    --color-5:rgb(238, 241, 242);
+    --color-6:rgb(16, 16, 16);
+}
+*{
+    scroll-behavior: smooth;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    
+    min-height: 200vh;
+}
+/* img{
+    border: #fbfbf3 solid 7px;
+    border-radius: 25px;
+} */
+.cg_logo{
+    background: fixed;
+    padding-top: 9px;
+    height: 40px;
+    width: 50px;
+    
+}
+header{
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 20px 30px rgb(0, 0, 0,0.15);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding:  20px 100px;
+    z-index: 80;
+}
+
+header.sticky {
+    padding: 5px 100px;
+    background: #f7f1f1;
+}
+header .logo{
+    position: relative;
+    font-weight: 700;
+    
+    font-size: 2em;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    display: flex;
+    justify-content:left;
+    text-transform: uppercase;
+    color: transparent;
+    text-shadow: 0 0 0 #33333333;
+    background: linear-gradient(
+        220deg,
+        var(--color-1) 19%,
+        transparent 19%, transparent 20%,
+        var(--color-2) 20%, var(--color-2) 39%,
+        transparent 39%, transparent 40%, 
+        var(--color-3) 40%, var(--color-3) 59%,
+        transparent 59%, transparent 60%,
+        var(--color-4) 60%, var(--color-4) 
+        79%, transparent 79%, transparent 79%,
+        var(--color-5) 80%
+    );
+    -webkit-background-clip: text;
+}
+header.sticky .logo{
+    
+    background: linear-gradient(
+        220deg,
+        var(--color-6) 19%,
+        transparent 19%, transparent 20%,
+        var(--color-2) 20%, var(--color-2) 39%,
+        transparent 39%, transparent 40%, 
+        var(--color-6) 40%, var(--color-6) 59%,
+        transparent 59%, transparent 60%,
+        var(--color-4) 60%, var(--color-4) 
+        79%, transparent 79%, transparent 79%,
+        var(--color-5) 80%
+    );
+    -webkit-background-clip: text;
+}
+
+/* @media screen and{
+    header .logo{
+        font-size: 10vw;
+    }
+} */
+
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+    
+
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500px;
+    letter-spacing: 6px;
+    transition: 0.6s;
+}
+
+
+
+
+header.sticky ul li a{
+    color: rgb(57, 47, 47)
+}
+
+/* header.sticky .cg_logo{
+    background:url("img_2/CGBUG.jpg")
+} */
+
+
+/* upper_effect */
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: #a0a0a0;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+}
+div ul a:before,
+div ul a:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background-color: cyan;
+  transition: 0.5s;
+}
+div ul a:after {
+  left: 0;
+  bottom: -10px;
+}
+div a:before {
+  right: 0;
+  top: -10px;
+}
+div ul a:hover {
+  color: #ffffff;
+}
+a:hover:after,
+a:hover:before {
+  width: 100%;
+}
+

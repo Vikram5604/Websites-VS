@@ -1,0 +1,129 @@
+
+/* .section_about{
+    border-bottom: 5px solid skyblue;
+} */
+
+.head{
+    font-size: 5vw;
+    color: rgb(237, 241, 241);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+h2{
+    font-size: 30px;
+}
+
+body{
+    margin-top: 90px;
+    min-height: 100vh;
+    background-color: rgb(8, 7, 7);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vw;
+    
+}
+
+
+.icon_1 i{
+    color: skyblue;
+    font-size: 50px;
+    margin-right: 25px;
+    display: flex;
+
+    
+}
+
+
+.para{
+    color: white;
+    text-align: center;
+    width: 85%;
+    margin: auto;
+    padding: 20px 0 60px;
+    font-size: 18px;
+    
+}
+
+.box .content p{
+    text-align: left;
+    font-size: 15px;
+    width: 300px;
+    font-weight: 100;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+
+.container .box{
+    position: relative;
+    height: 300px;
+    color: white;
+    display: flex;
+    padding: 0 30px 0 30px;
+    /* justify-content: center;
+    align-items: center; */
+    
+    /* -webkit-box-reflect: below 15px linear-gradient( transparent, transparent, rgba(0,0,0,.2)); */
+    
+}
+/* .container .box:hover{
+    color:black;
+
+} */
+
+/* .container .box:before
+{
+    content: ' ';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    border: 4px solid white;
+    background:black;
+    filter: url("#wavy");
+} */
+
+
+/* .container .box:hover:before
+{
+   background: white;
+   transition: 0.5s;
+} */
+
+/* .container .box .content{
+    position: absolute;
+    
+    text-align: center;
+    transition: 0.5s;
+
+} */
+
+
+
+
+/* .container .box:after
+{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    border: 4px solid white;
+    border: none;
+    background:rgba(255,255,255,.1);
+} */
+
+/* svg{
+    width: 0;
+    height: 0;
+}
+ */
+

@@ -1,0 +1,51 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+p{
+    font-style: italic;
+    padding-top: 100px;
+}
+
+.water
+{
+    position:relative;
+}
+
+.water h1{
+    position: absolute;
+    color: #fff;
+    
+    transform: (-50%,-50%);
+    /* font-size: 80; */
+}
+
+.water h1:nth-child(1)
+{
+    color: transparent;
+    -webkit-text-stroke: 2px #e7f0f5;
+}
+
+.water h1:nth-child(2)
+{
+    color: hsl(58, 98%, 48%);
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0%,100%{
+        
+        clip-path: polygon(0% 44%, 15% 38%, 36% 48%, 52% 54%, 68% 52%, 82% 45%, 99% 38%, 100% 100%, 0% 99%);
+    }
+
+    50%
+    {
+        
+        clip-path: polygon(0% 48%, 22% 55%, 39% 58%, 55% 51%, 72% 44%, 85% 44%, 99% 45%, 100% 100%, 0% 99%);
+    }
+}
